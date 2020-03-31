@@ -1,0 +1,41 @@
+"""
+Keep in mind this project also contains the extra challenges from the site, link in the README file.
+We create 3 variables that store data inputted from the user the first one being a random integer where it checks if
+the number is an even or odd number and prints the appropiate message,the second and third variable will be used for
+checking if the second variable can be divided by the third variable and print an appropiate message.
+"""
+
+randint = int(input("enter a number : "))
+
+num = int(input("enter a second number : "))
+
+check = int(input("enter a third number : "))
+
+# the conditions to check if the first number is odd/even and if the second number can be divided by the third number
+# for that we use the modulo operator to see if it can be divided exactly to that integer.
+
+if randint % 4 == 0:
+    print("the first number can be divided by 4")
+
+# here is a nested if so we can put some more conditions in each outcome for the second and third variable to print the
+# appropiate message
+    if num % check == 0:
+        print("The second number can be divided by the third number")
+    else:
+        print("the second number can't be divided with the third number")
+
+if randint % 2 == 0:
+    print(" the first number is an even number")
+
+    if num % check == 0:
+        print("The second number can be divided by the third number")
+    else:
+        print("the second number can't be divided with the third number")
+
+if randint % 3 == 0:
+    print("the first number is an odd number")
+
+    if num % check == 0:
+        print("The second number can be divided by the third number")
+    else:
+        print("the second number can't be divided with the third number")
