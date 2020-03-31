@@ -24,3 +24,23 @@ year_future = 2020 + years
 # we now multiply the message with the extra_number variable we created before and create new lines for each completed cycle
 
 print(extra_number*("your name is " + name + " and you will be 100 years old in the year " + str(year_future) + ".\n"))
+# example : What is your name : Josh
+# How old are you : 14
+# enter a random number : 14
+# your name is Josh and you will be 100 years old in the year 2106.
+# your name is Josh and you will be 100 years old in the year 2106.
+# your name is Josh and you will be 100 years old in the year 2106.
+# your name is Josh and you will be 100 years old in the year 2106.
+# your name is Josh and you will be 100 years old in the year 2106.
+# your name is Josh and you will be 100 years old in the year 2106.
+# your name is Josh and you will be 100 years old in the year 2106.
+# your name is Josh and you will be 100 years old in the year 2106.
+# your name is Josh and you will be 100 years old in the year 2106.
+# your name is Josh and you will be 100 years old in the year 2106.
+# your name is Josh and you will be 100 years old in the year 2106.
+# your name is Josh and you will be 100 years old in the year 2106.
+# your name is Josh and you will be 100 years old in the year 2106.
+# your name is Josh and you will be 100 years old in the year 2106.
+# ...
+# Procces finished with exit code 0 (you don't need to pay attention for these last 3 lines
+# they're from my IDE(Integrated development enviroment) called PyCharm.
