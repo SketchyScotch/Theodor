@@ -24,7 +24,7 @@ if randint % 4 == 0:
     else:
         print("the second number can't be divided with the third number")
 
-if randint % 2 == 0:
+elif randint % 2 == 0:
     print(" the first number is an even number")
 
     if num % check == 0:
@@ -32,7 +32,7 @@ if randint % 2 == 0:
     else:
         print("the second number can't be divided with the third number")
 
-if randint % 3 == 0:
+else:
     print("the first number is an odd number")
 
     if num % check == 0:
