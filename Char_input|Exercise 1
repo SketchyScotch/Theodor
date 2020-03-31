@@ -1,0 +1,26 @@
+# Keep in mind this also has the extra requirements like the \n command and how many times the message is printed
+# we store the name, age, random number that is inputted by the user
+
+name = input("What is your name : ")
+age = input("How old are you : ")
+extra_number = int(input("enter a random number : "))
+
+# we transform the age input into an integer
+
+age = int(age)
+
+# we transform the name variable name into a string in case the user inputs an integer
+
+name = str(name)
+
+# we now make a variable that stores how many years there are until the user becomes 100 years old
+
+years = 100 - age
+
+# we store the year in which the user becomes 100 years old in a variable
+
+year_future = 2020 + years
+
+# we now multiply the message with the extra_number variable we created before and create new lines for each completed cycle
+
+print(extra_number*("your name is " + name + " and you will be 100 years old in the year " + str(year_future) + ".\n"))
