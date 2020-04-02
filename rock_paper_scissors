@@ -1,0 +1,54 @@
+"""
+Make a two-player Rock-Paper-Scissors game. (Hint: Ask for player plays (using input), compare them, print out a message
+of congratulations to the winner, and ask if the players want to start a new game)
+
+Remember the rules:
+
+Rock beats scissors
+Scissors beats paper
+Paper beats rock
+
+Concepts for today:
+While loops
+Infinite loops
+Break statements
+
+"""
+import random
+
+game = ["rock", "paper", "scissors"]
+
+while True:
+
+    random_str = random.choice(game)
+    
+    user_input = input("Please enter rock,paper or scissors to play or type quit to quit the game : ")
+
+    if user_input == "quit":
+        break
+    elif user_input == "rock" and random_str == "scissors":
+        print("You won!")
+
+    elif user_input == "rock" and random_str == "paper":
+        print("You lost.")
+
+    elif user_input == "paper" and random_str == "rock":
+        print("you won!")
+
+    elif user_input == "paper" and random_str == "scissors":
+        print("you lost.")
+
+    elif user_input == "scissors" and random_str == "paper":
+        print("you won!")
+
+    elif user_input == "scissors" and random_str == "rock":
+        print("you lost")
+
+    elif user_input == "rock" and random_str == "rock":
+        print("Tie.")
+
+    elif user_input == "paper" and random_str == "paper":
+        print("Tie.")
+
+    elif user_input == "scissors" and random_str == "scissors":
+        print("Tie.")
