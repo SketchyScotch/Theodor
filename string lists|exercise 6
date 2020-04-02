@@ -1,0 +1,22 @@
+"""
+Ask the user for a string and print out whether this string is a palindrome or not. (A palindrome is a string that reads
+the same forwards and backwards.)
+
+Concepts for today:
+-List indexing
+-Strings are lists
+
+This is my own added extra where I also made user input possible
+"""
+
+user_input = input("Enter a string : ")
+
+total_num = -1
+
+for n in user_input:
+    total_num += 1
+
+if user_input[0:total_num] == user_input[total_num:0:-1]:
+    print("Your string is a palindrome")
+else:
+    print("Your string is not a palindrome")
