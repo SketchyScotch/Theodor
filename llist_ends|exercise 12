@@ -1,0 +1,20 @@
+"""
+Write a program that takes a list of numbers (for example, a = [5, 10, 15, 20, 25]) and makes a new list of only the
+first and last elements of the given list. For practice, write this code inside a function.
+
+"""
+import random
+
+randlist = random.sample(range(20), random.randint(7, 15))
+
+total_elements = -1
+
+for n in randlist:
+    total_elements += 1
+
+
+def list_ends():
+    print(str(randlist[0]) + " " + str(randlist[total_elements]))
+
+
+list_ends()
