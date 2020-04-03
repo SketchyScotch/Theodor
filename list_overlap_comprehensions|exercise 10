@@ -27,3 +27,4 @@ b = random.sample(range(10), 6)
 common = [n for n in a for x in b if n == x]
 
 print(common)
+
