@@ -1,0 +1,28 @@
+"""
+Write a program that asks the user how many Fibonnaci numbers to generate and then generates them. Take this opportunity
+to think about how you can use functions. Make sure to ask the user to enter the number of numbers in the sequence to
+next number in the sequence is the sum of the previous two numbers in the sequence. The sequence looks like this: 1, 1,
+2, 3, 5, 8, 13, …)
+
+"""
+
+a = [1, 1]
+
+user_input = int(input("Enter a number : "))
+
+
+def fibonacci(lenght):
+
+    if lenght == 1:
+        print(1)
+
+    elif lenght != 1 and lenght != 0:
+        for n in a:
+            if len(a) < lenght:
+                l_numbers = a[-1] + a[-2]
+                a.append(l_numbers)
+
+    print(a)
+
+
+fibonacci(user_input)
